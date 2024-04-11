@@ -1,6 +1,31 @@
 from selenium.webdriver.common.by import By
 
 
+<<<<<<< HEAD
+class LoginPage:
+    # Login Page
+    textbox_username_id = "Email"
+    textbox_password_id = "Password"
+    button_login_xpath = "//div[@class='buttons']/button[@class='button-1 login-button']"
+    link_logout_linktext = "Logout"
+
+    def __init__(self,driver):
+        self.driver=driver
+
+    def setUserName(self, username):
+        self.driver.find_element(By.ID, self.textbox_username_id).clear()
+        self.driver.find_element(By.ID, self.textbox_username_id).send_keys(username)
+
+    def setPassword(self, password):
+        self.driver.find_element(By.ID, self.textbox_password_id).clear()
+        self.driver.find_element(By.ID, self.textbox_password_id).send_keys(password)
+
+    def clickLogin(self):
+        self.driver.find_element(By.XPATH, self.button_login_xpath).click()
+
+    def clickLogout(self):
+        self.driver.find_element(By.LINK_TEXT, self.link_logout_linktext).click()
+=======
 class Login:
     textbox_username_id = "Email"
     textbox_password_id = "password"
@@ -23,3 +48,4 @@ class Login:
 
     def clickLogout(self):
         self.driver.find_element(By.XPATH, link_logout_xpath).click()
+>>>>>>> f8ff7a748df21df36b4aadd71752c926638b145d
