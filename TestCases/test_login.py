@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import pytest
 #from selenium import webdriver
 from PageObjects.LoginPage import LoginPage
@@ -39,7 +38,7 @@ class Test_001_Login:
         self.driver = setup
         self.driver.get(self.baseURL)
         self.lp = LoginPage(self.driver)
-=======
+
 #import pytest
 #from selenium import webdriver
 from PageObjects.LoginPage import Login
@@ -64,12 +63,12 @@ class Test_001_Login:
         self.driver = setup()
         self.driver.get(self.baseURL)
         self.lp = Login(self.driver)
->>>>>>> f8ff7a748df21df36b4aadd71752c926638b145d
+
         self.lp.setUserName(self.username)
         self.lp.setPassword(self.password)
         self.lp.clickLogin()
         act_title = self.driver.title
-<<<<<<< HEAD
+
         if act_title == "Dashboard / nopCommerce administration":
             self.logger.info("****Login test passed ****")
             self.driver.close()
@@ -78,10 +77,9 @@ class Test_001_Login:
             self.logger.error("****Login test failed ****")
             self.driver.save_screenshot(".\\Screenshots\\" + "test_homePageTitle.png")
             self.driver.close()
-=======
+
         self.driver.close()
         if act_title == "Dashboard / nopCommerce administration":
             assert True
         else:
->>>>>>> f8ff7a748df21df36b4aadd71752c926638b145d
             assert False
