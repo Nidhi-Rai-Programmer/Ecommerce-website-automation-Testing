@@ -1,10 +1,11 @@
+
 import configparser
 
-config=configparser.RawConfigParser()  #
+config=configparser.RawConfigParser()
 config.read(".\\Configurations\\config.ini")
 
 class ReadConfig:
-    @staticmethod                   #static method can be accessed using class name without using object
+    @staticmethod
     def getApplicationURL():
         url=config.get('common info','baseURL')
         return url

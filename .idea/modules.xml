@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/NopCommerce.iml" filepath="$PROJECT_DIR$/.idea/NopCommerce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Ecommerce-website-automation-Testing.iml" filepath="$PROJECT_DIR$/.idea/Ecommerce-website-automation-Testing.iml" />
     </modules>
   </component>
 </project>
